@@ -1,0 +1,4 @@
+databaseChangeLog:
+
+  - include:
+      file: db/changelog/platformAdmin/platformAdmin-001-createtable.sql
