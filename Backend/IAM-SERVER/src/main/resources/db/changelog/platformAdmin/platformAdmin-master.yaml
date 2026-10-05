@@ -2,3 +2,5 @@ databaseChangeLog:
 
   - include:
       file: db/changelog/platformAdmin/platformAdmin-001-createtable.sql
+  - include:
+      file: db/changelog/platformAdmin/platformAdmin-002-createtable.sql
