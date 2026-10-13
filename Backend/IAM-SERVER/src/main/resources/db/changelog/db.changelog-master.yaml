@@ -2,3 +2,5 @@ databaseChangeLog:
 
   - include:
       file: db/changelog/platformAdmin/platformAdmin-master.yaml
+  - include:
+      file:    KeysTable-master.yaml

@@ -1,6 +1,6 @@
 package com.example.IAM_SERVER.platformAdmin.domain.model;
 
-import com.example.IAM_SERVER.platformAdmin.exceptions.InvalidPasswordException;
+import com.example.IAM_SERVER.platformAdmin.domain.exceptions.InvalidPasswordException;
 
 public class Adminpassword {
     private final String password ;
