@@ -3,4 +3,7 @@ databaseChangeLog:
   - include:
       file: db/changelog/platformAdmin/platformAdmin-master.yaml
   - include:
-      file:    KeysTable-master.yaml
+      file:  db/changelog/KeysTable/KeysTable-master.yaml
+  - include:
+      file: db/changelog/RefreshToken/RefreshToken-master.yaml
+

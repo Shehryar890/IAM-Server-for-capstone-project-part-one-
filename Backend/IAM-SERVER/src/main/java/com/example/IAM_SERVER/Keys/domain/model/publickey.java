@@ -22,6 +22,6 @@ public class publickey {
 
     }
     String getvalue() {
-        this.value = value;
+       return  this.value = value;
     }
 }

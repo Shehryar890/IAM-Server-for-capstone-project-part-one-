@@ -4,14 +4,16 @@ package com.example.IAM_SERVER.platformAdmin.adapters.out.persistance.entity;
 
 import jakarta.persistence.*;
 import java.time.Instant;
+import java.util.UUID;
 
 @Entity
 @Table(name = "platform_admin")
 public class PlatformAdminJpaEntity {
 
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long iam_AdminId;
+    @Column(name = "platform_admin_id")
+    private UUID iam_AdminId;
 
     @Column(nullable = false, unique = true)
     private String username;
@@ -32,7 +34,7 @@ public class PlatformAdminJpaEntity {
 
 
     public PlatformAdminJpaEntity(
-            Long iamAdminId,
+       UUID iamAdminId,
             String username,
             String password,
             Instant createdAt,
@@ -46,7 +48,7 @@ public class PlatformAdminJpaEntity {
     }
 
 
-    public Long getIamAdminId() {
+    public UUID getIamAdminId() {
         return iam_AdminId;
     }
 
@@ -84,4 +86,5 @@ public class PlatformAdminJpaEntity {
     public void setUpdatedAt(Instant updatedAt) {
         this.updatedAt = updatedAt;
     }
+
 }

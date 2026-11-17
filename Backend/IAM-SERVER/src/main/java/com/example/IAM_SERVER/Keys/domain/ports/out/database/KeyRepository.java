@@ -7,6 +7,8 @@ import java.util.Optional;
 public interface KeyRepository {
 
     void save(SigningKeys singkeyobject);
-
-
+    boolean existsAnyKey();
+    Optional<SigningKeys> findActiveSigningKey();
+    Optional<String> findPublicKeyByKid(String kid);
 }
+

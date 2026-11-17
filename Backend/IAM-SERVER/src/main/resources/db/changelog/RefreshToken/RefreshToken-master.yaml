@@ -1,0 +1,5 @@
+databaseChangeLog:
+
+  - include:
+      file: db/changelog/RefreshToken/RefreshToken-001-creatingtokentable.sql
+      

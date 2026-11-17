@@ -1,4 +1,4 @@
 databaseChangeLog:
 
   - include:
-      file: KeysTable-001-creatingKeysTable.sql
+      file: db/changelog/KeysTable/KeysTable-001-creatingKeysTable.sql

@@ -1,6 +1,7 @@
 package com.example.IAM_SERVER.Utility.JWT;
 
+import com.example.IAM_SERVER.platformAdmin.domain.model.platformAdmin;
+
 public interface GenerateToken {
-    public JTWTOKEN token (platformAdmin admin);
+    public String token (platformAdmin admin);
 }
-j

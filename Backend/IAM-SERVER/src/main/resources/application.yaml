@@ -1,7 +1,8 @@
 spring:
   application:
     name: IAM-SERVER
-
+  profiles:
+    active=dev:
 
   datasource:
     url: ${DB_URL}
@@ -19,3 +20,29 @@ spring:
 
 server:
   port: 9000
+
+
+iam:
+  keystore:
+    path: ${IAM_KEYSTORE_PATH:C:/iam-dev/keystore/keystore.p12}
+    type: ${IAM_KEYSTORE_TYPE:PKCS12}
+    alias: ${IAM_KEYSTORE_ALIAS:iam-encryption-key}
+
+  security:
+    keystore-password:
+      path: ${IAM_KEYSTORE_PASSWORD_PATH:C:/iam-dev/secrets/keystore.password}
+
+
+
+
+  cookies:
+      http-only: true
+      same-site: Lax
+
+      access-token:
+        name: access_token
+        path: /api/v1
+
+      refresh-token:
+        name: refresh_token
+        path: /api/v1/auth

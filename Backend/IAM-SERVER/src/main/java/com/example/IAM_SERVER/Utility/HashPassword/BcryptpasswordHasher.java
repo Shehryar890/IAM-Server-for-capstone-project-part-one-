@@ -1,6 +1,5 @@
 package com.example.IAM_SERVER.Utility.HashPassword;
 
-import com.example.IAM_SERVER.Config.Bcrypt;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
