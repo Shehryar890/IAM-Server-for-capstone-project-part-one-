@@ -1,0 +1,4 @@
+databaseChangeLog:
+
+  - include:
+      file: db/changelog/Clientpublickey_supported_algorithams/Clientpublickey_supported_algorithams-001-createTable.sql

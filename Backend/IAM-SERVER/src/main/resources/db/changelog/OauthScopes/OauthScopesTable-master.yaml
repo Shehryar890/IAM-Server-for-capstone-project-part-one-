@@ -1,0 +1,4 @@
+databaseChangeLog:
+
+  - include:
+      file: db/changelog/OauthScopes/OauthScopesTable-001-createtable.sql

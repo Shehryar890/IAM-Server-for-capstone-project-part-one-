@@ -1,0 +1,4 @@
+databaseChangeLog:
+
+  - include:
+      file: db/changelog/ClientRedirectUri/ClientRedirectUriTable-001-createtable.sql

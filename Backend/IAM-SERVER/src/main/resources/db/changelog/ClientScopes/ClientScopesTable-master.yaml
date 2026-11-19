@@ -1,0 +1,4 @@
+databaseChangeLog:
+
+  - include:
+      file: db/changelog/ClientScopes/ClientScopesTable-001-createtable.sql

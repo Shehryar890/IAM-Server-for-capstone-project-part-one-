@@ -6,4 +6,30 @@ databaseChangeLog:
       file:  db/changelog/KeysTable/KeysTable-master.yaml
   - include:
       file: db/changelog/RefreshToken/RefreshToken-master.yaml
+  - include:
+      file: db/changelog/Client/ClientTABLE-master.yaml
+  - include:
+      file: db/changelog/IdentityPermissions/IdentityPermissions-master.yaml
+  - include:
+      file: db/changelog/OauthScopes/OauthScopesTable-001-createtable.sql
 
+  - include:
+      file: db/changelog/ClientAuthMethods/ClientAuthMethods-master.yaml
+  - include:
+      file: db/changelog/PrivateClientsAuth/PrivateClientAuth-master.yaml
+  - include:
+      file: db/changelog/Clientpublickey_supported_algorithams/Clientpublickey_supported_algorithams-master.yaml
+  - include:
+      file: db/changelog/ClientRedirectUri/ClientRedirectUriTable-master.yaml
+  - include:
+      file: db/changelog/ClientScopes/ClientScopesTable-master.yaml
+  - include:
+      file: db/changelog/PublickKeyAuthMethod/PublicKeyAuthTable-master.yaml
+  - include:
+      file: db/changelog/SecretTokenAuthMethod/SecretTokenAuthMethod-master.yaml
+  - include:
+      file: db/changelog/TlsAuthMETHOD/TlsAuthMethod-master.yaml
+  - include:
+      file: db/changelog/TrustedCertificates/TrustedCertificates-master.yaml
+  - include:
+      file: db/changelog/ClientPermissions/ClientPermissionstable-master.yaml
